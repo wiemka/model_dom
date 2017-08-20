@@ -18,5 +18,9 @@ console.log(pierwszyLinkPoSelektorze);
 var linkiPoSelektorze = document.querySelectorAll(".superlink");
 console.log(linkiPoSelektorze);
 
+console.log("****")
 
-
+linkiPoSelektorze.forEach(function (element, index) {
+    console.log(element.outerHTML);
+    console.log(element.innerHTML);
+})
